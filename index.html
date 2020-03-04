@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <html lang="en">
+        <title>Questionnaire</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="css/app.css">
+    </head>
+    <body> 
+        <div class="start-page">
+            <div class="form-group row userInput">
+                <label for="name" class="col-3 col-form-label nameLabel  ">Name</label>
+                <div class="col-9">
+                    <input type="text" id="name" placeholder="Name" autocomplete="off">
+                </div>
+            </div>
+            
+            <div class="row userButton">
+                <div class="col-12">
+                    <div class="start-button">Start</div>
+                </div>
+            </div>
+            <div class="row endingButton">
+                <div class="col-12">
+                    <div class="ending-button">Leaderboard</div>
+                </div>
+            </div>
+        </div>
+        <div class="loading">
+            <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+        </div>
+
+        <div class="container questionnaire">
+            <div class="row title-box">
+                <p class="title font-weight-bold"></p>
+            </div>
+            <div class="row question-box">
+                <p class="question"></p>
+            </div>
+            <div class="row answer-box">
+                <div class="col-6 answer" id="1"></div>
+                <div class="col-6 answer" id="2"></div>
+                <div class="col-6 answer" id="3"></div>
+                <div class="col-6 answer" id="4"></div>
+            </div>
+        </div>
+
+        <div class="container ending">
+            <div class="save">
+                <p class="save-genre-title"></p>
+                <p class="save-score"></p>
+                <p class="save-name"></p>
+                <p class="topic font-weight-bold">Save? #todo</p>
+                <ul class="topic-list list-unstyled">
+                    <li class="confirm">yes</li>
+                    <li class="deny">no</li>
+
+                    <li class="go-back mt-5 back">Go Back</li>
+                </ul>
+            </div>
+            <div class="genres">
+                <p class="topic font-weight-bold">Topics (more coming soon)</p>
+                <ul class="topic-list list-unstyled">
+                    <li class="games-button">Video Games</li>
+
+                    <li class="go-back mt-5 back">Go Back</li>
+                </ul>
+            </div>
+            <div class="leaderboard-games">
+                <p class="topic font-weight-bold">Video Games leaderboard #todo</p>
+                <ul class="topic-list list-unstyled">
+                    <li class="go-back mt-5 back">Go Back</li>
+                </ul>
+            </div>
+        </div>
+
+            
+        <script src="js/jQuery.js"></script>
+        <script src="js/plugin.js"></script>
+        <script src="js/app.js"></script>
+    </body>
+</html>
